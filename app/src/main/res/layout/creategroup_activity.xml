@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/headerTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="REVIZ'GROUP"
+            android:textSize="24sp"
+            android:padding="16dp" />
+
+        <LinearLayout
+            android:id="@+id/navbarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/headerTextView"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+
+
+            <TextView
+                android:id="@+id/coursTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mes cours" />
+
+            <TextView
+                android:id="@+id/groupesTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mes groupes" />
+
+            <EditText
+                android:id="@+id/searchEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Rechercher des cours" />
+
+            <TextView
+                android:id="@+id/deconnexionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Déconnexion" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/titrePageTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/navbarLayout"
+            android:text="Création d'un nouveau groupe"
+            android:textSize="20sp"
+            android:padding="16dp" />
+
+        <LinearLayout
+            android:id="@+id/nomGroupeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titrePageTextView"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/nomGroupeLabelTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nom du nouveau groupe :"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/nomGroupeEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Entrez le nom du groupe" />
+
+            <Button
+                android:id="@+id/validerButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Valider" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/utilisateursLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nomGroupeLayout"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:visibility ="gone">
+
+            <TextView
+                android:id="@+id/titreAjoutTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Utilisateurs à ajouter"
+                android:textSize="18sp"
+                android:paddingBottom="8dp" />
+
+            <LinearLayout
+                android:id="@+id/utilisateur1Layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/utilisateur1LabelTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Utilisateur 1:"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/utilisateur1EditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Entrez le pseudo de l'utilisateur 1" />
+
+                <Button
+                    android:id="@+id/ajouterButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ajouter" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/ajouterNouvelleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Ajouter une nouvelle personne au groupe +"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/buttonsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/utilisateursLayout"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <Button
+                android:id="@+id/annulerButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Annuler" />
+
+            <Button
+                android:id="@+id/terminerButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Terminer" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

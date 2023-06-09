@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Projet_Esimed_Mobile</string>
+    <string name="error_connection_failed">Erreur la connexion a échoué</string>
+    <string name="error_authentication_failed">Erreur authentification </string>
+    <string name="error_empty_token">Erreur token vide </string>
+</resources>
