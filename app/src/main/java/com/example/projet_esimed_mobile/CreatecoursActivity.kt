@@ -13,13 +13,7 @@ import retrofit2.Callback
 import retrofit2.Response
 
 class CreatecoursActivity : AppCompatActivity() {
-
-    private lateinit var addUserLink: TextView
-    private lateinit var addUserWrapper: LinearLayout
-    private var count: Int = 1
-    var idgroupe = ""
-    var iduser = ""
-    var end = false
+    
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.createcours_activity)
